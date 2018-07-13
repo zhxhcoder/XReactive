@@ -1,5 +1,7 @@
 package com.zhxh.xreactive.feature
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
@@ -10,6 +12,10 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.fragment_main.view.*
+
+/**
+ * 在app中不能再建MainActivity,不然运行后报错
+ */
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,6 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         container.adapter = mSectionsPagerAdapter
 
+        button.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("app://tab_home"))) }
 
     }
 
