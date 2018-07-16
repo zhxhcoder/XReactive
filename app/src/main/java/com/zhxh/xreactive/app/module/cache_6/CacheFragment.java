@@ -1,5 +1,3 @@
-
-
 package com.zhxh.xreactive.app.module.cache_6;
 
 import android.graphics.Color;
