@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_main.view.*
  * 在app中不能再建MainActivity,不然运行后报错
  */
 
-class MainActivity : AppCompatActivity() {
+class MainFeatureActivity : AppCompatActivity() {
 
     private var mSectionsPagerAdapter: SectionsPagerAdapter? = null
 
