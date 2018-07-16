@@ -2,8 +2,6 @@ package com.zhxh.xreactive.app;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.app.Fragment;
-import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -31,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
 
         setSupportActionBar(toolBar);
 
-        viewPager.setAdapter(new FragmentPagerAdapter(getFragmentManager()) {
+        viewPager.setAdapter(new android.support.v4.app.FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public int getCount() {
                 return 6;
             }
 
             @Override
-            public Fragment getItem(int position) {
+            public android.support.v4.app.Fragment getItem(int position) {
                 switch (position) {
                     case 0:
                         return new ElementaryFragment();

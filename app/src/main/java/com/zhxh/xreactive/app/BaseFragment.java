@@ -3,7 +3,7 @@
 package com.zhxh.xreactive.app;
 
 import android.app.AlertDialog;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 import butterknife.OnClick;
 import io.reactivex.disposables.Disposable;
