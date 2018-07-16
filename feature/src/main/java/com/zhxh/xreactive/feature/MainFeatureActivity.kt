@@ -31,7 +31,7 @@ class MainFeatureActivity : AppCompatActivity() {
 
         container.adapter = mSectionsPagerAdapter
 
-        button.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("app://tab_home"))) }
+        //button.setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("app://tab_home"))) }
 
     }
 
