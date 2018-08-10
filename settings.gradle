@@ -1,1 +1,1 @@
-include ':feature', ':app', ':base', ':instantapp', ':xreactivelib'
+include ':feature', ':app', ':base', ':xreactivelib'
